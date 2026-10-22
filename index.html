@@ -1,0 +1,864 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千阳县苹果文化展示互动平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🍎</span>
+                <span class="logo-text">千阳苹果</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">首页</a></li>
+                <li><a href="#overview" class="nav-link">千阳印象</a></li>
+                <li><a href="#history" class="nav-link">历史文脉</a></li>
+                <li><a href="#varieties" class="nav-link">品种荟萃</a></li>
+                <li><a href="#growth" class="nav-link">生长之旅</a></li>
+                <li><a href="#interactive" class="nav-link">互动体验</a></li>
+                <li><a href="#nutrition" class="nav-link">营养百科</a></li>
+                <li><a href="#trace" class="nav-link">选购溯源</a></li>
+                <li><a href="#stories" class="nav-link">故事生活</a></li>
+                <li><a href="#message" class="nav-link">留言互动</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('orchard-panorama.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">陕西宝鸡 · 千阳</p>
+            <h1 class="hero-title">中国苹果之乡</h1>
+            <p class="hero-desc">黄土高原的馈赠，丝路古道的果香。<br>在这里，每一颗苹果都讲述着千阳的故事。</p>
+            <div class="hero-actions">
+                <a href="#overview" class="btn btn-primary">探索千阳苹果</a>
+                <a href="#interactive" class="btn btn-outline">开始互动</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- 产业数据大屏 -->
+    <section class="section data-screen" id="data-screen">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">INDUSTRY DATA</p>
+                <h2 class="section-title">产业数据大屏</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="data-icon">🌳</div>
+                    <div class="data-num" data-target="13">0</div>
+                    <div class="data-unit">万亩</div>
+                    <div class="data-label">种植规模</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon">📦</div>
+                    <div class="data-num" data-target="21">0</div>
+                    <div class="data-unit">万吨</div>
+                    <div class="data-label">年产量</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon">✅</div>
+                    <div class="data-num" data-target="70">0</div>
+                    <div class="data-unit">%</div>
+                    <div class="data-label">优果率</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon">🚀</div>
+                    <div class="data-num" data-target="6">0</div>
+                    <div class="data-unit">次飞天</div>
+                    <div class="data-label">航天育种</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快捷导航 -->
+    <section class="section section-alt quick-nav" id="quick-nav">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">QUICK ACCESS</p>
+                <h2 class="section-title">快捷导航</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="quick-grid">
+                <a href="#history" class="quick-item">
+                    <div class="quick-icon">📜</div>
+                    <h3>历史文脉</h3>
+                    <p>千年果香传承</p>
+                </a>
+                <a href="#varieties" class="quick-item">
+                    <div class="quick-icon">🍎</div>
+                    <h3>品种荟萃</h3>
+                    <p>六大特色品种</p>
+                </a>
+                <a href="#growth" class="quick-item">
+                    <div class="quick-icon">🌱</div>
+                    <h3>生长之旅</h3>
+                    <p>四季轮回之美</p>
+                </a>
+                <a href="#interactive" class="quick-item">
+                    <div class="quick-icon">🎮</div>
+                    <h3>互动体验</h3>
+                    <p>趣味游戏问答</p>
+                </a>
+                <a href="#trace" class="quick-item">
+                    <div class="quick-icon">🔎</div>
+                    <h3>选购溯源</h3>
+                    <p>放心购买引导</p>
+                </a>
+                <a href="#stories" class="quick-item">
+                    <div class="quick-icon">👨‍🌾</div>
+                    <h3>故事生活</h3>
+                    <p>果农与吃法</p>
+                </a>
+                <a href="#nutrition" class="quick-item">
+                    <div class="quick-icon">💊</div>
+                    <h3>营养百科</h3>
+                    <p>健康营养成分</p>
+                </a>
+                <a href="#message" class="quick-item">
+                    <div class="quick-icon">💬</div>
+                    <h3>留言互动</h3>
+                    <p>分享你的故事</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新动态 -->
+    <section class="section news-section" id="news">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">LATEST NEWS</p>
+                <h2 class="section-title">最新动态</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="news-list">
+                <a href="#history" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">15</span>
+                        <span class="news-month">10月</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>千阳苹果喜获丰收，万亩果园红遍山野</h3>
+                        <p>金秋十月，千阳县13万亩苹果进入集中采收期，红彤彤的果实挂满枝头，果农们迎来丰收的喜悦...</p>
+                    </div>
+                </a>
+                <a href="#varieties" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">08</span>
+                        <span class="news-month">10月</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>航天育种结硕果，千阳苹果再添新成员</h3>
+                        <p>经过6次航天搭载实验培育的新品种在千阳试种成功，果实品质和抗病性均有显著提升...</p>
+                    </div>
+                </a>
+                <a href="#history" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">20</span>
+                        <span class="news-month">09月</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>"千阳苹果"品牌价值突破百亿，迈向国际市场</h3>
+                        <p>千阳苹果区域公用品牌价值持续攀升，产品远销东南亚、欧洲等地，国际影响力不断扩大...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 千阳印象 -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">QIANYANG OVERVIEW</p>
+                <h2 class="section-title">千阳印象</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-text">
+                    <h3>黄土高原上的苹果明珠</h3>
+                    <p>千阳县地处陕西省宝鸡市北部，位于渭北旱塬丘陵沟壑区，是世界公认的苹果最佳优生区之一。这里海拔高、光照足、昼夜温差大，孕育出的苹果色泽鲜艳、肉质细脆、酸甜适口、香气浓郁。</p>
+                    <p>千阳苹果先后获得"国家地理标志保护产品"、"中国果品区域公用品牌"等荣誉，远销海内外，成为当地农民增收致富的"金果子"。</p>
+                    <div class="overview-tags">
+                        <span class="tag">国家地理标志</span>
+                        <span class="tag">最佳优生区</span>
+                        <span class="tag">绿色食品</span>
+                        <span class="tag">出口基地</span>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-num" data-target="12">0</div>
+                        <div class="stat-unit">万亩</div>
+                        <div class="stat-label">种植面积</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-target="30">0</div>
+                        <div class="stat-unit">万吨</div>
+                        <div class="stat-label">年产量</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-target="1100">0</div>
+                        <div class="stat-unit">m</div>
+                        <div class="stat-label">平均海拔</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-target="2200">0</div>
+                        <div class="stat-unit">h</div>
+                        <div class="stat-label">年日照时长</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 历史文脉 -->
+    <section class="section section-alt" id="history">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">HISTORICAL CONTEXT</p>
+                <h2 class="section-title">历史文脉</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>古代 · 丝路果香</h3>
+                        <p>千阳自古为丝绸之路重要驿站，苹果的前身——"柰"（绵苹果）早在汉代便沿丝路传入，在千阳这片土地上生根发芽。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>上世纪80年代 · 产业起步</h3>
+                        <p>千阳县开始规模化栽植苹果树，从山东、辽宁等地引进红富士、秦冠等优良品种，开启现代苹果产业发展之路。</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2000年代 · 品牌崛起</h3>
+                        <p>千阳苹果获得国家地理标志保护产品认证，"千阳苹果"品牌逐步叫响全国，种植面积突破10万亩。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2010年代 · 转型升级</h3>
+                        <p>推广矮砧密植、水肥一体化、绿色防控等现代栽培技术，千阳苹果迈入标准化、集约化发展新阶段。</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>今日 · 走向世界</h3>
+                        <p>千阳苹果出口东南亚、欧洲等多个国家和地区，电商平台蓬勃发展，一颗小苹果串起了大产业、大市场、大未来。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品种荟萃 -->
+    <section class="section" id="varieties">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">APPLE VARIETIES</p>
+                <h2 class="section-title">品种荟萃</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">千阳大地孕育的优质苹果品种</p>
+            </div>
+            <div class="variety-grid">
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                        <span class="variety-emoji">🍎</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>红富士</h3>
+                        <p class="variety-season">成熟期：10月中下旬</p>
+                        <p class="variety-desc">果形端正，色泽艳丽，肉质细脆，汁多味甜，耐储运，是千阳主栽品种。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <span class="variety-emoji">🍏</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>嘎啦</h3>
+                        <p class="variety-season">成熟期：8月中下旬</p>
+                        <p class="variety-desc">果实中等大小，果皮薄，肉质脆嫩，酸甜爽口，是早熟苹果的代表。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                        <span class="variety-emoji">🍏</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>澳洲青苹</h3>
+                        <p class="variety-season">成熟期：9月中下旬</p>
+                        <p class="variety-desc">果皮翠绿色，果肉紧实，酸度较高，适合加工与鲜食，风味独特。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
+                        <span class="variety-emoji">🍎</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>维纳斯黄金</h3>
+                        <p class="variety-season">成熟期：10月下旬</p>
+                        <p class="variety-desc">黄色果皮，果肉脆甜多汁，香气浓郁，是近年来颇受欢迎的新品种。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #e84393, #fd79a8);">
+                        <span class="variety-emoji">🍎</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>瑞雪</h3>
+                        <p class="variety-season">成熟期：10月下旬</p>
+                        <p class="variety-desc">果面光洁，绿黄色带红晕，肉质细脆，风味浓郁，优质晚熟品种。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img" style="background: linear-gradient(135deg, #d35400, #e67e22);">
+                        <span class="variety-emoji">🍎</span>
+                    </div>
+                    <div class="variety-info">
+                        <h3>秦冠</h3>
+                        <p class="variety-season">成熟期：10月中旬</p>
+                        <p class="variety-desc">陕西本土培育品种，果大色红，适应性强，丰产稳产，风味醇厚。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生长之旅 -->
+    <section class="section section-alt" id="growth">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">GROWTH JOURNEY</p>
+                <h2 class="section-title">生长之旅</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">一颗苹果的四季轮回</p>
+            </div>
+            <div class="growth-tabs">
+                <button class="growth-tab active" data-season="spring">🌸 春</button>
+                <button class="growth-tab" data-season="summer">☀️ 夏</button>
+                <button class="growth-tab" data-season="autumn">🍂 秋</button>
+                <button class="growth-tab" data-season="winter">❄️ 冬</button>
+            </div>
+            <div class="growth-content" id="growthContent">
+                <div class="growth-stage active" data-season="spring">
+                    <div class="growth-visual">
+                        <div class="tree-stage">
+                            <div class="tree">
+                                <div class="trunk"></div>
+                                <div class="crown spring-crown">
+                                    <span class="flower">🌸</span>
+                                    <span class="flower">🌸</span>
+                                    <span class="flower">🌸</span>
+                                    <span class="flower">🌸</span>
+                                    <span class="flower">🌸</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growth-info">
+                        <h3>春日 · 繁花似锦</h3>
+                        <p>春风送暖，苹果树迎来花期。千阳万亩果园粉白相间的苹果花竞相绽放，蜂蝶飞舞，花香四溢。果农们忙着疏花、授粉，为丰收打下基础。</p>
+                        <ul>
+                            <li><strong>关键农事：</strong>疏花、人工授粉、病虫害预防</li>
+                            <li><strong>物候期：</strong>萌芽期 → 花期 → 坐果期</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="growth-stage" data-season="summer">
+                    <div class="growth-visual">
+                        <div class="tree-stage">
+                            <div class="tree">
+                                <div class="trunk"></div>
+                                <div class="crown summer-crown">
+                                    <span class="leaf">🍃</span>
+                                    <span class="leaf">🍃</span>
+                                    <span class="leaf">🍃</span>
+                                    <span class="leaf">🍃</span>
+                                    <span class="small-apple">🟢</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growth-info">
+                        <h3>夏日 · 茁壮成长</h3>
+                        <p>烈日炎炎，苹果幼果在充足的光照下迅速膨大。果农们进行疏果、套袋、夏剪，确保每颗苹果都能获得充足的营养和阳光。</p>
+                        <ul>
+                            <li><strong>关键农事：</strong>疏果定果、果实套袋、夏季修剪</li>
+                            <li><strong>物候期：</strong>幼果膨大期 → 花芽分化期</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="growth-stage" data-season="autumn">
+                    <div class="growth-visual">
+                        <div class="tree-stage">
+                            <div class="tree">
+                                <div class="trunk"></div>
+                                <div class="crown autumn-crown">
+                                    <span class="apple">🍎</span>
+                                    <span class="apple">🍎</span>
+                                    <span class="apple">🍎</span>
+                                    <span class="apple">🍎</span>
+                                    <span class="apple">🍎</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growth-info">
+                        <h3>秋日 · 硕果累累</h3>
+                        <p>金秋时节，千阳大地被染红。苹果褪去纸袋，在阳光下迅速着色，红得透亮、红得诱人。这是果农一年中最忙碌也最喜悦的收获季节。</p>
+                        <ul>
+                            <li><strong>关键农事：</strong>摘袋、铺反光膜、采摘、分级</li>
+                            <li><strong>物候期：</strong>果实着色期 → 成熟期 → 采收期</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="growth-stage" data-season="winter">
+                    <div class="growth-visual">
+                        <div class="tree-stage">
+                            <div class="tree">
+                                <div class="trunk"></div>
+                                <div class="crown winter-crown">
+                                    <span class="snow">❄️</span>
+                                    <span class="snow">❄️</span>
+                                    <span class="snow">❄️</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growth-info">
+                        <h3>冬日 · 蓄势待发</h3>
+                        <p>白雪皑皑，苹果树进入休眠期。果农们利用冬闲时节进行整形修剪、清园消毒、施基肥，为来年的丰收积蓄力量。</p>
+                        <ul>
+                            <li><strong>关键农事：</strong>冬季修剪、清园、施基肥、涂白</li>
+                            <li><strong>物候期：</strong>落叶期 → 休眠期</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 互动体验 -->
+    <section class="section" id="interactive">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">INTERACTIVE EXPERIENCE</p>
+                <h2 class="section-title">互动体验</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">动手感受千阳苹果的乐趣</p>
+            </div>
+            <div class="interactive-grid">
+                <!-- 虚拟摘苹果 -->
+                <div class="interactive-card">
+                    <h3>🍎 虚拟摘苹果</h3>
+                    <p class="interactive-desc">点击树上的苹果进行采摘，限时30秒，看你能摘多少个！</p>
+                    <div class="game-area" id="gameArea">
+                        <div class="game-tree">
+                            <div class="game-trunk"></div>
+                            <div class="game-crown" id="gameCrown"></div>
+                        </div>
+                        <div class="game-info">
+                            <div class="game-score">得分：<span id="score">0</span></div>
+                            <div class="game-time">时间：<span id="timer">30</span>s</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="startGame">开始游戏</button>
+                </div>
+
+                <!-- 知识问答 -->
+                <div class="interactive-card">
+                    <h3>💡 苹果知识问答</h3>
+                    <p class="interactive-desc">测试你对千阳苹果的了解程度吧！</p>
+                    <div class="quiz-area" id="quizArea">
+                        <div class="quiz-question" id="quizQuestion">点击"开始答题"开始挑战</div>
+                        <div class="quiz-options" id="quizOptions"></div>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                    <button class="btn btn-primary" id="startQuiz">开始答题</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 营养百科 -->
+    <section class="section section-alt" id="nutrition">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">NUTRITION GUIDE</p>
+                <h2 class="section-title">营养百科</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">每100g千阳苹果的营养成分</p>
+            </div>
+            <div class="nutrition-grid">
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">⚡</div>
+                    <h3>能量</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 52%;"></div>
+                    </div>
+                    <p class="nutrition-value">52 kcal</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">🍚</div>
+                    <h3>碳水化合物</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 14%;"></div>
+                    </div>
+                    <p class="nutrition-value">13.8 g</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">🍬</div>
+                    <h3>糖分</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 10%;"></div>
+                    </div>
+                    <p class="nutrition-value">10.4 g</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">🌿</div>
+                    <h3>膳食纤维</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 24%;"></div>
+                    </div>
+                    <p class="nutrition-value">2.4 g</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">💧</div>
+                    <h3>维生素C</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 46%;"></div>
+                    </div>
+                    <p class="nutrition-value">4.6 mg</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">🧂</div>
+                    <h3>钾</h3>
+                    <div class="nutrition-bar">
+                        <div class="nutrition-fill" style="width: 10%;"></div>
+                    </div>
+                    <p class="nutrition-value">107 mg</p>
+                </div>
+            </div>
+            <div class="nutrition-tips">
+                <h3>🍎 苹果小知识</h3>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <h4>"一天一苹果，医生远离我"</h4>
+                        <p>苹果富含多酚类抗氧化物质，有助于降低心血管疾病风险。</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>带皮吃更营养</h4>
+                        <p>苹果皮中含有丰富的膳食纤维和抗氧化成分，洗净后带皮食用更佳。</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>最佳食用时间</h4>
+                        <p>上午是吃苹果的黄金时段，有助于消化吸收，补充一天能量。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品质溯源与选购 -->
+    <section class="section" id="trace">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">QUALITY & TRACEABILITY</p>
+                <h2 class="section-title">选购溯源</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">把信任说清楚，把购买引到正规渠道</p>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">📍</div>
+                    <h3>地理标志</h3>
+                    <p>突出千阳苹果区域公用品牌与产地背书，帮助用户识别正宗来源。</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🌿</div>
+                    <h3>绿色生产</h3>
+                    <p>展示绿色防控、水肥一体化、套袋管理等标准化种植过程。</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🏅</div>
+                    <h3>分级精选</h3>
+                    <p>说明果径、色泽、糖度、瑕疵率等分级标准，让“优果率70%”更可理解。</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🚚</div>
+                    <h3>冷链锁鲜</h3>
+                    <p>呈现采摘、预冷、分选、包装、运输流程，减少用户对品质的顾虑。</p>
+                </div>
+            </div>
+
+            <div class="trace-panel">
+                <div class="trace-query">
+                    <h3>溯源查询</h3>
+                    <p>用户购买后可输入包装溯源码，查看产地、品种、采摘时间、检测结果和流通节点。当前内置演示批次，后续可直接替换为真实溯源系统接口。</p>
+                    <div class="trace-form">
+                        <input type="text" id="traceCode" placeholder="请输入溯源码，如 QY20261015001" maxlength="24">
+                        <button class="btn btn-primary" id="traceBtn" type="button">查询溯源</button>
+                    </div>
+                    <div class="trace-samples">
+                        <span>演示批次：</span>
+                        <button type="button" data-code="QY20261015001">QY20261015001</button>
+                        <button type="button" data-code="QY20261008002">QY20261008002</button>
+                        <button type="button" data-code="QY20260920003">QY20260920003</button>
+                    </div>
+                    <div class="trace-result" id="traceResult"></div>
+                </div>
+                <div class="channel-card">
+                    <h3>官方购买渠道</h3>
+                    <p class="channel-note">本平台以展示与引导为主，不直接收款；以下入口可替换为官方商城、小程序、授权店铺或合作社联系方式。</p>
+                    <div class="channel-list">
+                        <div class="channel-item">
+                            <span>🛒</span>
+                            <div>
+                                <h4>官方旗舰店</h4>
+                                <p>建议接入天猫、京东、抖音等官方授权店铺。</p>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <span>🏡</span>
+                            <div>
+                                <h4>产地直供</h4>
+                                <p>展示重点合作社、家庭农场和龙头企业联系方式。</p>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <span>🏬</span>
+                            <div>
+                                <h4>线下网点</h4>
+                                <p>标注直营店、展销中心、商超专柜和节庆展销活动。</p>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <span>🤝</span>
+                            <div>
+                                <h4>团购采购</h4>
+                                <p>面向企业福利、学校食堂、社区团购提供对接入口。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visit-strip">
+                <div>
+                    <h3>把兴趣带到线下</h3>
+                    <p>预约果园采摘、亲子研学和基地参观，提交后自动生成预约编号，可在本页面查看和取消。</p>
+                </div>
+                <div class="visit-actions">
+                    <button class="btn btn-primary" type="button" data-booking-type="果园采摘">预约采摘</button>
+                    <button class="btn btn-outline dark" type="button" data-booking-type="亲子研学">研学报名</button>
+                    <button class="btn btn-outline dark" type="button" data-booking-type="基地参观">基地参观</button>
+                </div>
+            </div>
+
+            <div class="booking-board" id="bookingBoard">
+                <div class="booking-board-head">
+                    <div>
+                        <h3>我的预约</h3>
+                        <p>预约记录保存在本机浏览器，方便演示；正式上线可接入短信通知与后台审核。</p>
+                    </div>
+                    <button class="btn btn-outline dark" type="button" id="clearBookings">清空预约</button>
+                </div>
+                <div class="booking-list" id="bookingList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 果农故事与苹果生活 -->
+    <section class="section section-alt" id="stories">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">STORIES & APPLE LIFE</p>
+                <h2 class="section-title">故事生活</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">看见苹果背后的人，也学会更好地吃苹果</p>
+            </div>
+
+            <div class="story-grid">
+                <article class="story-card">
+                    <div class="story-tag">果农故事</div>
+                    <h3>老张的矮砧果园</h3>
+                    <p>从传统乔化树到矮砧密植园，老张最直观的感受是：树更好管了，果更匀了，收成也更稳了。</p>
+                </article>
+                <article class="story-card">
+                    <div class="story-tag">乡村振兴</div>
+                    <h3>合作社里的“分工经”</h3>
+                    <p>有人管技术，有人跑销售，有人做分级包装。合作社把小农户接入大市场，让好苹果卖出好价钱。</p>
+                </article>
+                <article class="story-card">
+                    <div class="story-tag">科技育种</div>
+                    <h3>六次飞天的种子</h3>
+                    <p>航天搭载不是噱头，而是一次次筛选与试验。回到地面的种子，要继续经过田间观察才能走进果园。</p>
+                </article>
+            </div>
+
+            <div class="life-grid">
+                <div class="life-card">
+                    <h3>怎么挑</h3>
+                    <ul>
+                        <li>看色泽：着色均匀、果面光洁更成熟。</li>
+                        <li>摸硬度：轻按有弹性，过软可能存放较久。</li>
+                        <li>闻香气：成熟苹果有自然果香。</li>
+                    </ul>
+                </div>
+                <div class="life-card">
+                    <h3>怎么存</h3>
+                    <ul>
+                        <li>短期常温阴凉处，避免阳光直晒。</li>
+                        <li>长期冷藏 0-4℃，并用保鲜袋留少量透气。</li>
+                        <li>与香蕉、梨等释放乙烯的水果分开放。</li>
+                    </ul>
+                </div>
+                <div class="life-card">
+                    <h3>怎么吃</h3>
+                    <ul>
+                        <li>鲜食：红富士、秦冠适合直接吃。</li>
+                        <li>榨汁：酸甜平衡品种更适合搭配胡萝卜。</li>
+                        <li>烘焙：澳洲青苹酸味足，适合做派和果酱。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 留言互动 -->
+    <section class="section" id="message">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">MESSAGE BOARD</p>
+                <h2 class="section-title">留言互动</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">分享你与千阳苹果的故事</p>
+            </div>
+            <div class="message-container">
+                <form class="message-form" id="messageForm">
+                    <div class="form-group">
+                        <input type="text" id="msgName" placeholder="你的昵称" maxlength="20" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="msgContent" placeholder="说说你对千阳苹果的印象..." maxlength="200" required></textarea>
+                        <div class="char-count"><span id="charCount">0</span>/200</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发表留言</button>
+                </form>
+                <div class="message-list" id="messageList">
+                    <p class="no-message">还没有留言，快来抢沙发吧~</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍎</span>
+                    <span class="logo-text">千阳苹果文化展示平台</span>
+                </div>
+                <p class="footer-desc">黄土高原的馈赠 · 丝路古道的果香</p>
+                <div class="footer-links">
+                    <a href="#overview">千阳印象</a>
+                    <a href="#history">历史文脉</a>
+                    <a href="#varieties">品种荟萃</a>
+                    <a href="#interactive">互动体验</a>
+                    <a href="#trace">选购溯源</a>
+                    <a href="#stories">故事生活</a>
+                </div>
+                <p class="footer-copy">© 2026 千阳县苹果文化展示互动平台 | 本平台为文化展示用途</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 预约弹窗 -->
+    <div class="booking-modal" id="bookingModal" aria-hidden="true">
+        <div class="booking-mask" data-close-booking></div>
+        <div class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+            <button class="booking-close" type="button" data-close-booking aria-label="关闭">×</button>
+            <h3 id="bookingTitle">预约采摘</h3>
+            <p class="booking-subtitle">请填写到访信息，提交后自动生成预约编号。</p>
+            <form id="bookingForm">
+                <div class="booking-grid">
+                    <label>
+                        预约类型
+                        <select id="bookingType" required>
+                            <option value="果园采摘">果园采摘</option>
+                            <option value="亲子研学">亲子研学</option>
+                            <option value="基地参观">基地参观</option>
+                        </select>
+                    </label>
+                    <label>
+                        体验基地
+                        <select id="bookingBase" required>
+                            <option value="城关镇矮砧密植示范园">城关镇矮砧密植示范园</option>
+                            <option value="南寨镇标准化果园">南寨镇标准化果园</option>
+                            <option value="草碧镇研学体验基地">草碧镇研学体验基地</option>
+                        </select>
+                    </label>
+                    <label>
+                        到访日期
+                        <input type="date" id="bookingDate" required>
+                    </label>
+                    <label>
+                        到访人数
+                        <input type="number" id="bookingPeople" min="1" max="50" value="2" required>
+                    </label>
+                    <label>
+                        联系人
+                        <input type="text" id="bookingName" maxlength="20" placeholder="姓名" required>
+                    </label>
+                    <label>
+                        手机号
+                        <input type="tel" id="bookingPhone" maxlength="11" placeholder="用于接收确认信息" required>
+                    </label>
+                </div>
+                <label class="booking-note">
+                    备注需求
+                    <textarea id="bookingNote" maxlength="120" placeholder="如儿童人数、是否需要讲解、是否计划采购苹果等"></textarea>
+                </label>
+                <div class="booking-error" id="bookingError"></div>
+                <button type="submit" class="btn btn-primary booking-submit">提交预约</button>
+            </form>
+            <div class="booking-success" id="bookingSuccess"></div>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
