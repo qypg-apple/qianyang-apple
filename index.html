@@ -35,15 +35,31 @@
 
     <!-- Hero 首屏 -->
     <section class="hero" id="hero">
-        <div class="hero-bg" style="background-image: url('orchard-panorama.jpg');"></div>
+        <div class="hero-slider">
+            <div class="hero-slide" style="background-image: url('orchard-panorama.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('fujin-poster.jpg'); animation-delay: -6s;"></div>
+            <div class="hero-slide" style="background-image: url('fujin-rocket.jpg'); animation-delay: -12s;"></div>
+            <div class="hero-slide" style="background-image: url('fujin-astronaut.jpg'); animation-delay: -18s;"></div>
+        </div>
         <div class="hero-overlay"></div>
+        <div class="hotspot-bar">
+            <div class="hotspot-track">
+                <span>🚀 太空苹果「富金」 · 六次飞向中国空间站</span>
+                <span>⭐ 从黄土高原果园，到航天员鲜食桌</span>
+                <span>🍎 航天IP · 地标农产品 · 高端鲜果</span>
+                <span>🚀 太空苹果「富金」 · 六次飞向中国空间站</span>
+                <span>⭐ 从黄土高原果园，到航天员鲜食桌</span>
+                <span>🍎 航天IP · 地标农产品 · 高端鲜果</span>
+            </div>
+        </div>
         <div class="hero-content">
             <p class="hero-subtitle">陕西宝鸡 · 千阳</p>
             <h1 class="hero-title">中国苹果之乡</h1>
+            <p class="hero-badge">🚀 主推热点 · 太空苹果「富金」六次飞天</p>
             <p class="hero-desc">黄土高原的馈赠，丝路古道的果香。<br>在这里，每一颗苹果都讲述着千阳的故事。</p>
             <div class="hero-actions">
                 <a href="#overview" class="btn btn-primary">探索千阳苹果</a>
-                <a href="#interactive" class="btn btn-outline">开始互动</a>
+                <a href="#varieties" class="btn btn-outline">认识太空苹果富金</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -285,67 +301,72 @@
                 <p class="section-tag">APPLE VARIETIES</p>
                 <h2 class="section-title">品种荟萃</h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">千阳大地孕育的优质苹果品种</p>
+                <p class="section-subtitle">千阳六大主推品种，每一颗都有自己的故事</p>
             </div>
             <div class="variety-grid">
                 <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
-                        <span class="variety-emoji">🍎</span>
+                    <div class="variety-img">
+                        <img src="lucui.jpg" alt="鲁脆苹果">
                     </div>
                     <div class="variety-info">
-                        <h3>红富士</h3>
+                        <h3>鲁脆</h3>
+                        <p class="variety-season">成熟期：8月下旬</p>
+                        <p class="variety-desc">早熟脆甜型新品种，果肉细脆、汁液丰富、酸甜爽口，抢"鲜"上市，是早秋市场的抢手货。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img">
+                        <img src="micui.jpg" alt="蜜翠苹果">
+                    </div>
+                    <div class="variety-info">
+                        <h3>蜜翠</h3>
+                        <p class="variety-season">成熟期：9月中旬</p>
+                        <p class="variety-desc">果面黄绿光洁，果肉青翠细腻，糖度高、甜如蜂蜜，口感脆嫩无渣，深受消费者喜爱。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img">
+                        <img src="ruixianghong.jpg" alt="瑞香红苹果">
+                    </div>
+                    <div class="variety-info">
+                        <h3>瑞香红</h3>
+                        <p class="variety-season">成熟期：10月中旬</p>
+                        <p class="variety-desc">西北农林科技大学选育，果面全红艳丽，香气浓郁持久，肉质细脆，耐贮运，晚熟红色品种中的佼佼者。</p>
+                    </div>
+                </div>
+                <div class="variety-card">
+                    <div class="variety-img">
+                        <img src="qincui.jpg" alt="秦脆苹果">
+                    </div>
+                    <div class="variety-info">
+                        <h3>秦脆</h3>
                         <p class="variety-season">成熟期：10月中下旬</p>
-                        <p class="variety-desc">果形端正，色泽艳丽，肉质细脆，汁多味甜，耐储运，是千阳主栽品种。</p>
+                        <p class="variety-desc">西北农林科技大学选育的脆肉型品种，肉质硬脆、酸甜适口，极耐贮藏，可错峰销售至次年春季。</p>
                     </div>
                 </div>
-                <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
-                        <span class="variety-emoji">🍏</span>
+                <div class="variety-card variety-featured">
+                    <div class="variety-img">
+                        <img src="fujin.jpg" alt="太空苹果富金">
                     </div>
                     <div class="variety-info">
-                        <h3>嘎啦</h3>
-                        <p class="variety-season">成熟期：8月中下旬</p>
-                        <p class="variety-desc">果实中等大小，果皮薄，肉质脆嫩，酸甜爽口，是早熟苹果的代表。</p>
+                        <div class="featured-badges">
+                            <span>👑 主推品种</span>
+                            <span>🚀 六次飞天</span>
+                            <span>航天IP</span>
+                        </div>
+                        <h3>富金<small> · 太空苹果</small></h3>
+                        <p class="variety-season">成熟期：10月中下旬</p>
+                        <p class="variety-desc">千阳苹果的明星品种，历经六次航天搭载试验，从黄土高原果园飞向航天员的鲜食桌。果面金黄透红、糖度高、香气浓，集航天科技与千阳匠心于一身，是千阳苹果最闪亮的"金名片"。</p>
                     </div>
                 </div>
                 <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #27ae60, #229954);">
-                        <span class="variety-emoji">🍏</span>
-                    </div>
-                    <div class="variety-info">
-                        <h3>澳洲青苹</h3>
-                        <p class="variety-season">成熟期：9月中下旬</p>
-                        <p class="variety-desc">果皮翠绿色，果肉紧实，酸度较高，适合加工与鲜食，风味独特。</p>
-                    </div>
-                </div>
-                <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
-                        <span class="variety-emoji">🍎</span>
-                    </div>
-                    <div class="variety-info">
-                        <h3>维纳斯黄金</h3>
-                        <p class="variety-season">成熟期：10月下旬</p>
-                        <p class="variety-desc">黄色果皮，果肉脆甜多汁，香气浓郁，是近年来颇受欢迎的新品种。</p>
-                    </div>
-                </div>
-                <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #e84393, #fd79a8);">
-                        <span class="variety-emoji">🍎</span>
+                    <div class="variety-img">
+                        <img src="ruixue.jpg" alt="瑞雪苹果">
                     </div>
                     <div class="variety-info">
                         <h3>瑞雪</h3>
                         <p class="variety-season">成熟期：10月下旬</p>
-                        <p class="variety-desc">果面光洁，绿黄色带红晕，肉质细脆，风味浓郁，优质晚熟品种。</p>
-                    </div>
-                </div>
-                <div class="variety-card">
-                    <div class="variety-img" style="background: linear-gradient(135deg, #d35400, #e67e22);">
-                        <span class="variety-emoji">🍎</span>
-                    </div>
-                    <div class="variety-info">
-                        <h3>秦冠</h3>
-                        <p class="variety-season">成熟期：10月中旬</p>
-                        <p class="variety-desc">陕西本土培育品种，果大色红，适应性强，丰产稳产，风味醇厚。</p>
+                        <p class="variety-desc">西北农林科技大学选育的晚熟黄色品种，果面黄绿洁净，肉质细脆多汁、风味浓甜，被誉为千阳"黄金果"。</p>
                     </div>
                 </div>
             </div>

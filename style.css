@@ -109,6 +109,68 @@ img { max-width: 100%; display: block; }
     animation: floatIn 1s ease;
 }
 .hero-desc { font-size: 18px; margin-bottom: 36px; opacity: 0.92; }
+
+/* ===== 首页轮播（富金热点） ===== */
+.hero-slider { position: absolute; inset: 0; }
+.hero-slide {
+    position: absolute; inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: heroFade 24s ease-in-out infinite;
+}
+@keyframes heroFade {
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    25% { opacity: 1; }
+    29% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* ===== 富金热点滚动播报条 ===== */
+.hotspot-bar {
+    position: absolute; top: 70px; left: 0; right: 0; z-index: 3;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(253,203,110,0.35);
+    overflow: hidden;
+    padding: 9px 0;
+}
+.hotspot-track {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    animation: hotspotScroll 20s linear infinite;
+}
+.hotspot-track span {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-right: 90px;
+}
+@keyframes hotspotScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.hero-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(253,203,110,0.25), rgba(214,48,49,0.35));
+    border: 1px solid rgba(253,203,110,0.65);
+    color: #ffe9b0;
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    animation: badgePulse 2.4s ease-in-out infinite;
+}
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 rgba(253,203,110,0); }
+    50% { box-shadow: 0 0 26px rgba(253,203,110,0.5); }
+}
 .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 @keyframes floatIn {
     from { opacity: 0; transform: translateY(30px); }
@@ -266,6 +328,35 @@ img { max-width: 100%; display: block; }
 .variety-info h3 { font-size: 20px; margin-bottom: 6px; }
 .variety-season { color: var(--secondary); font-size: 13px; font-weight: 600; margin-bottom: 10px; }
 .variety-desc { color: var(--gray); font-size: 14px; }
+
+/* 品种实拍图 */
+.variety-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* 富金主推卡（横版整行） */
+.variety-featured {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    border: 2px solid var(--accent);
+}
+.variety-featured .variety-img { flex: 0 0 46%; height: auto; min-height: 300px; }
+.variety-featured .variety-info { padding: 32px; display: flex; flex-direction: column; justify-content: center; }
+.variety-featured h3 { font-size: 28px; }
+.variety-featured h3 small { font-size: 16px; color: var(--primary); font-weight: 600; }
+.variety-featured .variety-desc { font-size: 15px; line-height: 1.9; }
+.featured-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.featured-badges span {
+    background: linear-gradient(135deg, #fdcb6e, #f39c12);
+    color: #5a3b00;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+@media (max-width: 768px) {
+    .variety-featured { flex-direction: column; }
+    .variety-featured .variety-img { flex: none; width: 100%; height: 220px; min-height: 0; }
+    .hotspot-track span { font-size: 12px; padding-right: 50px; }
+}
 
 /* ===== 生长之旅 ===== */
 .growth-tabs {
